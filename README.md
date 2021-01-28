@@ -24,19 +24,35 @@ The core of all this is the update() function.
 Here it is with some comments:
 
 def update():
+
   #LOOP THROUGH ALL ROWS
+  
   for ir in range(len(data)-1,-1,-1):
+  
     #LOOP THROUGH ALL COLUMNS
+    
     for ic, c in enumerate(data[ir]):
+    
       #ONCE IN A THOUSAND CHANCE WE WILL 
+      
       if randint(1,1000) > 999:
+      
         #ADD A SINGLE RAINDROP TO THIS ROW/COLUMN POSITION
+        
         data[ir][ic] += randint(1,3)
+        
       #IF THERE AT LEAST 2 RAINDROPS IN THIS POSITION
+      
       if c > 2:
+      
         #REMOVE THE RAIN FROM THIS POSITION
+        
         data[ir][ic] -= c
+        
         #IF NOT ON THE BOTTOM ROW
+        
         if ir < len(data) -1:
+        
           #ADD THE SUBTRACTED AMOUNT OF RAIN TO THE ROW BELOW
+          
           data[ir+1][ic] += c
