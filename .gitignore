@@ -1,0 +1,25 @@
+# Dependency stores, caches and build output
+node_modules/
+bower_components/
+.deno/
+.venv/
+venv/
+virtualenv/
+site-packages/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.tox/
+.gradle/
+.next/
+.nuxt/
+.parcel-cache/
+target/
+dist/
+build/
+Pods/
+DerivedData/
+.cache/
+.DS_Store
+Thumbs.db
